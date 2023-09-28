@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Salaria Coding School</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Martian+Mono:wght@200&family=Montserrat:wght@100;200;500;900&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+}
+:root{
+	--main-color-primary: #5c0303;
+	--main-color-secondary: #c5aa13; /*rgb(255,165,0)*/
+	--main-color-white: #ffffff;
+	--main-color-black: #000000;
+	--main-color-grey: #e8e8e8;
+}
+nav{
+    padding: 10px;
+    background-color: var(--main-color-secondary);
+
+}
+nav button{
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    border: 3px solid var(--main-color-black);
+    color: var(--main-color-black);
+    border-radius: 75%;
+    font-weight: 800;
+}
+nav button:hover{
+    background-color: var(--main-color-primary);
+    color: var(--main-color-white);
+}
+.nav-logo{
+    font-size: 27px;
+    font-weight: 900;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+}
+.our{
+    background-image: url(../assets/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.our h1{
+    color: var(--main-color-white);
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    max-width: 60%;
+    left: 10%;
+    font-size: 100px;
+}
+.our p{
+    color: var(--main-color-primary);
+    background-color: rgba(255, 255, 255, 0.3);
+    max-width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 30px;
+    
+
+}
+.our button{
+    position: absolute;
+    bottom: 3%;
+    left: 45%;
+    padding:20px 30px 20px 30px;
+    background-color: var(--main-color-secondary);
+    color: var(--main-color-black);
+    font-size: 20px;
+    font-weight: 800;
+}
+.our button:hover{
+    background-color: var(--main-color-primary);
+    color: var(--main-color-white);
+}
+
+.about{
+    text-align: center;
+}
+.about h2{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 35px;
+    /* position: relative;
+    left: 40%; */
+    background-color: var(--main-color-secondary);
+}
+.about p{
+    background-color: var(--main-color-grey);
+    padding: 20px;
+    text-align: justify;
+    font-weight: 600;
+    max-width: 80%;
+    margin: auto;
+}
+.course{
+    text-align: center;
+}
+.course h3{
+    margin-top: 10px;
+    font-size: 35px;
+    /* position: relative;
+    left: 40%; */
+    background-color: var(--main-color-secondary);
+}
+
+.tabs{
+    left: -25px;
+    background-color: var(--main-color-grey);
+    text-align: center;
+}
+.facilities{
+    padding: 10px;
+   
+}
+.facilities h4{
+    padding: 20px;
+    text-align: center;    
+    background-color: var(--main-color-secondary);
+    font-size: 35px;
+    font-weight: 900;
+    position: relative;
+
+}
+.facilities img{
+    max-width: 250px;
+    max-height: auto;
+    padding: 10 5px;
+}
+.facilities span{
+    display: inline-block;
+    padding: 35px;
+    
+}
+.facilities span p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.facilities p{
+    background-color: var(--main-color-grey);
+    max-width: 80%;
+    position: relative;
+    left: 10%;
+    font-weight: 600;
+}
+
+.contact-div{
+    background-color: gray;
+}
+.form{
+    position: fixed;
+    padding: 15px;
+    float: left;
+    width: 40%;
+    
+    position: relative;
+}
+
+.contact{
+    position: fixed;
+    padding: 15px;
+    float: left;
+    width: 50%;
+    font-size: 24px;
+    position: relative;
+}
+
+h6{
+   
+    padding: 20px;
+    text-align: center;    
+    background-color: var(--main-color-secondary);
+    font-size: 35px;
+    font-weight: 900;
+
+ 
+}
+table{
+           
+    max-width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    border: 3px solid greenyellow;
+    padding: 10px;
+    text-align: left;
+
+}
+
+table th,td{
+    border: 1px dashed orange;
+    padding: 10px;
+}
+.cont{
+    font-size: 25px;
+    font-weight: 600;
+}
+.form p{
+    text-align: center;
+    font-weight: 600;
+
+}
+.form  ul li{
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer{
+    color: var(--main-color-white);
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: var(--main-color-black);
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.foot{
+    display: block;
+    color: green;
+    padding: 10px;
+    border-top: 1px solid green;
+}
+.footer {
+    background-color: var(--main-color-black);
+    color: var(--main-color-white);
+    text-align: center;
+    font-size: 20px; /* Adjust the font size as needed */
+    padding: 10px; /* Add some padding to the footer */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="nav-logo">Dheeraj Saini</span>
+        <a href="index.html"><button>Menu</button></a>
+        <a href="about.html"><button>About Us</button></a>
+        <a href="courses.html"><button>courses</button></a>
+        <a href="facilities.html"><button>Facilities</button></a>
+        <a href="contact.html"><button>Contact us</button></a>
+    </nav>
+    <!-- our section -->
+
+    <div class="our">
+        <h1>Step Up Your Coding Game </h1>
+        <p>The new way to improve your programming skills while having fun and get noticed</p>
+        <a href="http://127.0.0.1:5500/courses.html"><button class="btn">GET STARTED</button></a>
+    </div>
+    <!-- about section -->
+    <div class="about">
+         <h2>
+            About Our School
+         </h2>
+         <br>
+         <br>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, dolorum? Esse error, qui molestiae quis perspiciatis a dignissimos blanditiis repellat facere architecto possimus soluta libero exercitationem quam corrupti laborum non sed dolorem! Dicta similique facilis voluptatibus quisquam, eos enim doloremque aliquam, delectus ea mollitia perspiciatis fuga! Maxime unde voluptate porro.</p>
+         <br>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, dolorum? Esse error, qui molestiae quis perspiciatis a dignissimos blanditiis repellat facere architecto possimus soluta libero exercitationem quam corrupti laborum non sed dolorem! Dicta similique facilis voluptatibus quisquam, eos enim doloremque aliquam, delectus ea mollitia perspiciatis fuga! Maxime unde voluptate porro.</p>
+        </div>
+        <!-- courses section -->
+        <div class="course">
+            <h3>OUR COURSES</h3>
+            <table class="tabs">
+                <thead>
+                    <th><strong>Course</strong></th>
+                    <th><strong>Description</strong> </th>
+                </thead>
+                <tr>
+                    <td>Python:-</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe repudiandae corporis iste beatae quis amet voluptates autem laboriosam? At voluptates rerum ut illo esse, totam eos maxime veritatis placeat.</td>
+                </tr>
+                
+                <tr>
+                    <td>Java-script:-</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe repudiandae corporis iste beatae quis amet voluptates autem laboriosam? At voluptates rerum ut illo esse, totam eos maxime veritatis placeat.</td>
+                </tr>
+                
+                <tr>
+                    <td>Data science:-</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe repudiandae corporis iste beatae quis amet voluptates autem laboriosam? At voluptates rerum ut illo esse, totam eos maxime veritatis placeat.</td>
+                </tr>
+                
+                <tr>
+                    <td>FSWD &nbsp;:-</td>
+                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum saepe repudiandae corporis iste beatae quis amet voluptates autem laboriosam? At voluptates rerum ut illo esse, totam eos maxime veritatis placeat.</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- facilities section -->
+        <div class="facilities">
+            <h4>Facilities</h4>
+            <span>
+                <img src="./assets/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+                <p>Best Classrooms</p>
+            </span>
+
+            <span>
+                <img src="./assets/john-schnobrich-FlPc9_VocJ4-unsplash.jpg" alt="">
+                <p>Best Teachers</p>
+            </span>
+
+            <span>
+                <img src="./assets/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="">
+                <p>Wifi faculty</p>
+            </span>
+
+            <span>
+                <img src="./assets/christian-wiediger-WkfDrhxDMC8-unsplash.jpg" alt="">
+                <p>Great learing</p>
+            </span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo quae ut perspiciatis deleniti illum eum iusto iure aliquam, quasi necessitatibus, laboriosam nisi, nihil saepe suscipit et ab fuga! In eligendi aliquid totam officiis fugiat voluptas accusamus quam. Architecto nulla voluptatum vel sit perferendis aut beatae accusamus laboriosam dignissimos dolore, exercitationem voluptate atque dolores reiciendis recusandae ea aliquid? Atque asperiores quaerat, eveniet, beatae eos tempora unde debitis aspernatur magnam quod dolore veniam! Odit praesentium mollitia quibusdam accusamus, voluptatem fuga tempora, quae itaque sunt officia architecto cum inventore non quia dicta nemo cumque laboriosam quis laborum dolorum dignissimos molestiae sequi magni? Vel.</p>
+
+        </div>
+        <!-- contact us -->
+        <div class="contact-div">
+            <h6>Contact Us</h6>
+            <div class="contact">
+                <table>
+                    <td colspan="2">Contact Us</td>
+                        
+                    <tr>
+                        <td>Address:</td>
+                        <td>Gandhi Nagar, Jammu, Jammu &amp; Kashmir</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>6006142137</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>salariadheera456@gmail.com</td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table>
+
+            </div>
+        
+            <div class="form">
+                
+                <form action="backend.php">
+                    <table>
+                        <tr>
+                            <td colspan="2" class="cont">Contact Form</td>
+                        </tr>
+                        <tr>
+                            <td>Enter Your Name</td>
+                            <td><input type="text" name="" id="" placeholder="Name"></td>
+                        </tr>
+                        <tr>
+                            <td>Enter your Email</td>
+                            <td><input type="text" name="" id="" placeholder="Email"></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Phone Number</td>
+                            <td><input type="text" name="" id="" placeholder="Phone Number"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" name="" id=""></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div class="foot">
+            Copyright 2023 - &copy; Dheeraj Saini
+        </div>
+        
+
+        
+</body>
+</html>
